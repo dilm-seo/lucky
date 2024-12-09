@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@font-face {
+  font-family: 'Digital';
+  src: url('https://fonts.gstatic.com/s/share/v14/i7dJIFliZjKNF63xM56-WkJUQUq7.woff2') format('woff2');
+}
+
+.font-digital {
+  font-family: 'Digital', monospace;
+}
+
+@keyframes pulse-red {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-red {
+  animation: pulse-red 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
